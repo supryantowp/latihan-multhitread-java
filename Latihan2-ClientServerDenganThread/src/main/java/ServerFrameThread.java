@@ -115,6 +115,7 @@ public class ServerFrameThread extends javax.swing.JFrame {
            public void run() {
                try {
                    serverSocket = new ServerSocket(port);
+                   startServer();
                } catch(IOException e) { 
                    textArea.append(e.toString());
                }
